@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutritionControl", "NutritionControl\NutritionControl.csproj", "{51A83C16-F1F0-4C02-97DE-058CBD0A765B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A83C16-F1F0-4C02-97DE-058CBD0A765B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A83C16-F1F0-4C02-97DE-058CBD0A765B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A83C16-F1F0-4C02-97DE-058CBD0A765B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A83C16-F1F0-4C02-97DE-058CBD0A765B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68666045-D6EC-4370-8863-D5B33C680D5C}
+	EndGlobalSection
+EndGlobal
