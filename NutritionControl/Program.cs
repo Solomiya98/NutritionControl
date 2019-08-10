@@ -1,29 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 namespace NutritionControl
 {
+    /// <summary>
+    /// Entry point class
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Entry point for a project
+        /// </summary>
+        /// <param name="args">Arguments for program</param>
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-            //BuildWebHost(args).Run();
         }
-
-        
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
-
-
-
     }
 }

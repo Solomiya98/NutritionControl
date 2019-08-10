@@ -1,20 +1,15 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
 using NutritionControl.DAL.Concrete.Configuration;
 using NutritionControl.DAL.Concrete.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NutritionControl.DAL
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext(DbContextOptions options)
-              : base(options)
-        {
-        }
+              : base(options) { }
         public DbSet<AuthorizedUser> AuthorizedUsers { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
