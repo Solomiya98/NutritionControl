@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 using NutritionControl.DAL.Concrete.Configuration;
+using NutritionControl.DAL.Concrete.Configuration.InitialConfig;
 using NutritionControl.DAL.Concrete.Entities;
 
 namespace NutritionControl.DAL
@@ -31,6 +32,11 @@ namespace NutritionControl.DAL
             builder.ApplyConfiguration(new ProductReceiptConfiguration());
             builder.ApplyConfiguration(new ProductAuthUserConfiguration());
             builder.ApplyConfiguration(new ReceiptAuthUserConfiguration());
+
+            //Initial Data Configurations
+
+            builder.ApplyConfiguration(new CategoryInitConfig());
+            builder.ApplyConfiguration(new ProductInitConfig());
 
             base.OnModelCreating(builder);
         }

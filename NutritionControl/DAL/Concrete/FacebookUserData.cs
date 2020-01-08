@@ -15,12 +15,10 @@ namespace NutritionControl.DAL.Concrete
         public string Locale { get; set; }
         public FacebookPictureData Picture { get; set; }
     }
-
     internal class FacebookPictureData
     {
         public FacebookPicture Data { get; set; }
     }
-
     internal class FacebookPicture
     {
         public int Height { get; set; }
@@ -29,7 +27,6 @@ namespace NutritionControl.DAL.Concrete
         public bool IsSilhouette { get; set; }
         public string Url { get; set; }
     }
-
     internal class FacebookUserAccessTokenData
     {
         [JsonProperty("app_id")]
@@ -43,12 +40,10 @@ namespace NutritionControl.DAL.Concrete
         [JsonProperty("user_id")]
         public long UserId { get; set; }
     }
-
     internal class FacebookUserAccessTokenValidation
     {
         public FacebookUserAccessTokenData Data { get; set; }
     }
-
     internal class FacebookAppAccessToken
     {
         [JsonProperty("token_type")]

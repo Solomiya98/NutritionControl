@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace NutritionControl.DAL.Concrete.Entities
+﻿namespace NutritionControl.DAL.Concrete.Entities
 {
     public class PhysiologyInfo
     {
